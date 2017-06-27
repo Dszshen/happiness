@@ -3,7 +3,6 @@ package com.uuit.happiness.controller.system;
 import com.alibaba.fastjson.JSONObject;
 import com.uuit.happiness.bean.Role;
 import com.uuit.happiness.common.util.JsonResult;
-import com.uuit.happiness.common.util.JsonobjectToBean;
 import com.uuit.happiness.service.system.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +36,7 @@ public class RoleController {
      * @param role
      * @return
      */
-    @RequestMapping(method = RequestMethod.POST,value="add")
+    /*@RequestMapping(method = RequestMethod.POST,value="add")
     public JsonResult add(@RequestBody JSONObject role){
         try {
             Role role1 = (Role) JsonobjectToBean.fromJsonToBean(role,Role.class);
@@ -48,7 +47,7 @@ public class RoleController {
         }
         //roleService.addRole(role);
         //return JsonResult.failure("程序出错！");
-    }
+    }*/
 
     /**
      * 获取角色列表
