@@ -1,180 +1,84 @@
 doctype html
 html(lang='')
-    head
-        meta(charset='utf-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        title 首页
-        // Bootstrap CSS
-        link(rel='stylesheet', href='${request.contextPath}/assets/libs/bootstrap/dist/css/bootstrap.min.css')
-        link(rel='stylesheet', href='${request.contextPath}/assets/libs/wookmark/css/main.css')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 照片墙
+    // Bootstrap CSS
+    link(rel='stylesheet', href='${request.contextPath}/assets/libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='${request.contextPath}/assets/libs/wookmark/css/main.css')
 
-        //app.css
-        link(rel='stylesheet', href='${request.contextPath}/assets/css/app.css')
-        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-        // WARNING: Respond.js doesn't work if you view the page via file://
-        | <!--[if lte IE 9]> <script src="./assets/libs/html5shiv/dist/html5shiv.min.js"></script>
-        | <script src="./assets/libs/respond.js/dest/respond.min.js"></script><![endif]-->
-        | <!--[if lte IE 8]> <p class="text-center" style="display:block;background-color:#eaddac;padding:5px;color:#900;font-size:16px;">对不起，本网站不支持IE8以及IE8以下版本，为获得更好的体验，建议您更新为IE9及以上版本，本网站推荐使用谷歌浏览器，祝您生活愉快。</p> <![endif]-->
-    body
-        .app-header
-            .app-header-nav
-                h1.logo 网站logo
-                .app-nav
-                    ul
-                        li
-                            a(href="#") 首页
-                        li
-                            a(href="#") 其他1
-                        li
-                            a(href="#") 其他2
-                        li
-                            a(href="#") 其他3
-        .app-content
-            .app-wall.app-container
-                div(role='main')
-                    ul#container.tiles-wrap.animated
-                        // These are our grid blocks
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (1).jpg', width='200', height='283')
-                            p 1
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='300')
-                            p 2
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (3).jpg', width='200', height='252')
-                            p 3
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (4).jpg', width='200', height='158')
-                            p 4
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (5).jpg', width='200', height='300')
-                            p 5
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (6).jpg', width='200', height='297')
-                            p 6
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (7).jpg', width='200', height='200')
-                            p 7
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (8).jpg', width='200', height='200')
-                            p 8
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (9).jpg', width='200', height='398')
-                            p 9
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (10).jpg', width='200', height='267')
-                            p 10
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (11).jpg', width='200', height='283')
-                            p 11
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (12).jpg', width='200', height='300')
-                            p 12
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='252')
-                            p 13
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='158')
-                            p 14
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='300')
-                            p 15
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='297')
-                            p 16
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='200')
-                            p 17
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='200')
-                            p 18
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='398')
-                            p 19
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='267')
-                            p 20
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='283')
-                            p 21
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='300')
-                            p 22
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='252')
-                            p 23
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='158')
-                            p 24
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='300')
-                            p 25
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='297')
-                            p 26
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='200')
-                            p 27
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='200')
-                            p 28
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='398')
-                            p 29
-                        li
-                            img(src='${request.contextPath}/assets/images/demos/1 (2).jpg', width='200', height='267')
-                            p 30
-                        // End of grid blocks
-        .app-footer
-        // jQuery
-        script(src='${request.contextPath}/assets/libs/jquery/dist/jquery.min.js')
-        // Bootstrap JavaScript
-        script(src='${request.contextPath}/assets/libs/bootstrap/dist/js/bootstrap.min.js')
-        script(src='${request.contextPath}/assets/libs/imagesloaded/imagesloaded.pkgd.min.js')
-        script(src='${request.contextPath}/assets/libs/wookmark/wookmark.min.js')
-        // IE10 viewport hack for Surface/desktop Windows 8 bug
-        script.
-            (function ($) {
-                // Instantiate wookmark after all images have been loaded
-                var wookmark,
-                    container = '#container',
-                    $container = $(container),
-                    $window = $(window),
-                    $document = $(document);
+    //app.css
+    link(rel='stylesheet', href='${request.contextPath}/assets/css/app.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    | <!--[if lte IE 9]> <script src="./assets/libs/html5shiv/dist/html5shiv.min.js"></script>
+    | <script src="./assets/libs/respond.js/dest/respond.min.js"></script><![endif]-->
+    | <!--[if lte IE 8]> <p class="text-center" style="display:block;background-color:#eaddac;padding:5px;color:#900;font-size:16px;">对不起，本网站不支持IE8以及IE8以下版本，为获得更好的体验，建议您更新为IE9及以上版本，本网站推荐使用谷歌浏览器，祝您生活愉快。</p> <![endif]-->
+  body
+    .app-header
+      include ../common/navigation
+    .app-content
+      .app-wall
+        .wall-pictures-wrap(role='main')
+          ul#container.tiles-wrap.animated
+            | <#list wallList as wall>
+            li
+              .wall-item-img-wrap
+                img(src='${request.contextPath}/assets/images/demos/1 (${wall_index+1}).jpg')
+              .wall-item-desc-wrap
+                p.wall-item-desc ${wall.desc}
+              .wall-item-opts
+            | </#list>
+            // End of grid blocks
+    .app-footer
+    // jQuery
+    script(src='${request.contextPath}/assets/libs/jquery/dist/jquery.min.js')
+    // Bootstrap JavaScript
+    script(src='${request.contextPath}/assets/libs/bootstrap/dist/js/bootstrap.min.js')
+    script(src='${request.contextPath}/assets/libs/imagesloaded/imagesloaded.pkgd.min.js')
+    script(src='${request.contextPath}/assets/libs/wookmark/wookmark.min.js')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script.
+        (function ($) {
+            // Instantiate wookmark after all images have been loaded
+            var wookmark,
+                container = '#container',
+                $container = $(container),
+                $window = $(window),
+                $document = $(document);
 
-                imagesLoaded(container, function () {
-                    wookmark = new Wookmark(container, {
-                        offset: 20, // Optional, the distance between grid items
-                        itemWidth: 210 // Optional, the width of a grid item
-                    });
+            imagesLoaded(container, function () {
+                wookmark = new Wookmark(container, {
+                    offset: 15, // Optional, the distance between grid items
+                    itemWidth: 300 // Optional, the width of a grid item
                 });
+            });
+            /**
+             * When scrolled all the way to the bottom, add more tiles
+             */
+            function onScroll() {
+                // Check if we're within 100 pixels of the bottom edge of the broser window.
+                var winHeight = window.innerHeight ? window.innerHeight : $window.height(), // iphone fix
+                    closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
 
-                /**
-                 * When scrolled all the way to the bottom, add more tiles
-                 */
-                function onScroll() {
-                    // Check if we're within 100 pixels of the bottom edge of the broser window.
-                    var winHeight = window.innerHeight ? window.innerHeight : $window.height(), // iphone fix
-                        closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
+                if (closeToBottom) {
+                    // Get the first then items from the grid, clone them, and add them to the bottom of the grid
+                    var $items = $('li', $container),
+                        $firstTen = $items.slice(0, 10).clone().css('opacity', 0);
+                    $container.append($firstTen);
 
-                    if (closeToBottom) {
-                        // Get the first then items from the grid, clone them, and add them to the bottom of the grid
-                        var $items = $('li', $container),
-                            $firstTen = $items.slice(0, 10).clone().css('opacity', 0);
-                        $container.append($firstTen);
+                    wookmark.initItems();
+                    wookmark.layout(true, function () {
+                        // Fade in items after layout
+                        setTimeout(function () {
+                            $firstTen.css('opacity', 1);
+                        }, 300);
+                    });
+                }
+            };
 
-                        wookmark.initItems();
-                        wookmark.layout(true, function () {
-                            // Fade in items after layout
-                            setTimeout(function () {
-                                $firstTen.css('opacity', 1);
-                            }, 300);
-                        });
-                    }
-                };
-
-                // Capture scroll event.
-                $window.bind('scroll.wookmark', onScroll);
-            })
-            (jQuery);
+            // Capture scroll event.
+            $window.bind('scroll.wookmark', onScroll);
+        })(jQuery);
