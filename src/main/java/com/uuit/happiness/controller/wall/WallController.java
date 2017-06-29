@@ -17,9 +17,19 @@ public class WallController {
     @Resource
     private WallService wallService;
 
+    /**
+     * 获取照片墙数据
+     * @param model
+     * @return
+     */
     @RequestMapping("index")
     public String wall(Model model){
         model.addAttribute("wallList",wallService.wall());
         return "front/wall/wall";
+    }
+
+    @RequestMapping("add")
+    public void add(){
+
     }
 }

@@ -8,10 +8,15 @@ import java.util.List;
 
 /**
  * Created by zhangbin on 2017/6/28 0028.
+ * @description 照片墙功能
  */
 @Service("wallService")
 public class WallService {
 
+    /**
+     * 获取照片墙数据
+     * @return
+     */
     public List<JSONObject> wall(){
         List<JSONObject> list=new ArrayList<JSONObject>();
 
@@ -24,6 +29,13 @@ public class WallService {
         }
 
         return list;
+    }
+
+    /**
+     * 新增照片墙数据
+     */
+    public void add(){
+
     }
 
 }
