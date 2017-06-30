@@ -28,6 +28,16 @@ public class WallController {
         return "front/wall/wall";
     }
 
+    @RequestMapping("book")
+    public String book(){
+        return "front/wall/book";
+    }
+
+    @RequestMapping("detail")
+    public String detail(){
+        return "front/wall/detail";
+    }
+
     @RequestMapping("add")
     public void add(){
 
