@@ -227,8 +227,10 @@ function resizeViewport() {
 	$('.magazine').removeClass('animated');
 
 	$('.magazine-viewport').css({
-		width: width,
-		height: height
+		width:'1200px',
+		height:'600px'
+		//width: width,
+		//height: height
 	}).
 	zoom('resize');
 
