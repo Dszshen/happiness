@@ -1,9 +1,12 @@
 package com.uuit.happiness.controller.wall;
 
+import com.alibaba.fastjson.JSONArray;
 import com.uuit.happiness.service.wall.WallService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 
@@ -31,6 +34,14 @@ public class WallController {
     @RequestMapping("book")
     public String book(){
         return "front/wall/book";
+    }
+
+    @RequestMapping("book/regions/{regionNum}")
+    @ResponseBody
+    public JSONArray bookRegion(@PathVariable String regionNum){
+        JSONArray jsonArray = new JSONArray();
+
+        return jsonArray;
     }
 
     @RequestMapping("detail")
