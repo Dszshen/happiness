@@ -48,7 +48,7 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
+	img.attr('src', '/assets/images/demos/1 (' +  page + ').jpg');
 
 	loadRegions(page, pageElement);
 
@@ -78,7 +78,7 @@ function zoomTo(event) {
 
 function loadRegions(page, element) {
 
-	$.getJSON('wall/book/regions'+page).
+	$.getJSON('/wall/book/regions/'+page).
 		done(function(data) {
 			console.log('regionsdata--->',data);
 			$.each(data, function(key, region) {
