@@ -228,7 +228,7 @@ function resizeViewport() {
 
 	$('.magazine-viewport').css({
 		width:'1200px',
-		height:'600px'
+		height:height-120//90为header的高度
 		//width: width,
 		//height: height
 	}).
