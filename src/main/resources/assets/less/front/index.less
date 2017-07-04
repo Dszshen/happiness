@@ -1,0 +1,94 @@
+.app-index{
+  .index-left{
+    float: left;
+    width:820px;
+    border:1px solid #f2f2f2;
+    padding:10px;
+    .index-pic-wrap {
+      position: relative;
+      height: 400px;
+      .big-pic-wrap {
+        padding:0;
+        position: absolute;
+        height:400px;
+        width:536px;
+        top: 0;
+        left: 0;
+        >a{
+          display: block;
+          position: relative;
+          height:400px;
+          width:100%;
+        }
+
+        a>img{
+          width:100%;
+          height:100%;
+        }
+
+        .big-pic-text-wrap{
+          position: absolute;
+          bottom:0;
+          .pic-text {
+            color:#fff;
+            font-size:16px;
+            padding-left:10px;
+          }
+        }
+      }
+
+      .small-pic-item {
+        position: absolute;
+        right:0;
+        height:200px;
+        width:246px;
+        >a{
+          display: block;
+          position: relative;
+          height:190px;
+          width:100%;
+          //border:1px solid #000;
+        }
+
+        a>img{
+          width:100%;
+          height:190px;
+        }
+
+        .small-pic-text-wrap{
+          position: absolute;
+          bottom:0;
+          .small-pic-text {
+            color:#fff;
+            font-size:14px;
+            padding-left:10px;
+          }
+        }
+      }
+
+      .small-item1{
+        top:0;
+      }
+
+      .small-item2{
+        top:210px;
+      }
+    }
+  }
+
+  .index-right{
+    float: right;
+    width:365px;
+    height:420px;
+    background-color: #f2f2f2;
+    border:1px solid #ddd;
+  }
+}
+
+.app-index:after{
+  display: block;
+  content: "";
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
