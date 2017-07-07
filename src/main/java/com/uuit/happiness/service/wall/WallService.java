@@ -1,6 +1,6 @@
 package com.uuit.happiness.service.wall;
 
-import org.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -18,10 +18,9 @@ public class WallService {
      * 获取照片墙数据
      * @return
      */
-    public List<JSONObject> wall(){
+    public List<JSONObject> wall(int pageNo, int pageSize){
         List<JSONObject> list=new ArrayList<JSONObject>();
-
-        for (int i=1;i<=34;i++) {
+        for (int i=(pageNo-1)*pageSize+1;i<=pageSize*pageNo;i++) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("id", UUID.randomUUID().toString());
             jsonObject.put("imgUrl","url");
@@ -29,9 +28,9 @@ public class WallService {
             jsonObject.put("desc","描述"+i);
             list.add(jsonObject);
         }
-
         return list;
     }
+
 
     /**
      * 新增照片墙数据

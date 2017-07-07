@@ -1,0 +1,8 @@
+| <#list moreList as item>
+figure.wall-pic-item(wall-item-id='${item.id}')
+  .wall-item-img-wrap
+    img(src='${request.contextPath}/assets/images/demos/1 (${item_index+1}).jpg')
+  .wall-item-desc-wrap
+    p.wall-item-desc ${item.desc}
+  .wall-item-opts
+| </#list>

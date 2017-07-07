@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
@@ -26,9 +27,24 @@ public class WallController {
      * @return
      */
     @RequestMapping("index")
-    public String wall(Model model){
-        model.addAttribute("wallList",wallService.wall());
+    public String wall(@RequestParam(required = false,defaultValue ="1") Integer pageNo,
+                       @RequestParam(required = false,defaultValue = "10") Integer pageSize,
+                       Model model){
+        model.addAttribute("wallList",wallService.wall(pageNo,pageSize));
         return "front/wall/wall";
+    }
+
+    /**
+     * 获取更多的数据
+     * @return
+     */
+    @RequestMapping("more")
+    public String more(@RequestParam(required = false,defaultValue ="1") Integer pageNo,
+                                 @RequestParam(required = false,defaultValue = "10") Integer pageSize,Model model){
+
+        model.addAttribute("moreList",wallService.wall(pageNo,pageSize));
+
+        return "front/wall/wall_more";
     }
 
     @RequestMapping("book")
