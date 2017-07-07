@@ -39,6 +39,7 @@
               morePics.css('opacity', 1);
             }, 300);
           });
+          new grid3D(document.getElementById('grid3d'));
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
           console.log("error", textStatus);

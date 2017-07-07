@@ -405,70 +405,73 @@ section {
 
 /* Dummy content */
 
-.dummy-img,
-.dummy-text {
-  max-width: 600px;
+.wall-detail-img-wrap,
+.wall-detail-text {
+  max-width: 1000px;
   width: 90%;
   opacity: 0;
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.vertical .dummy-img,
-.vertical .dummy-text {
+.vertical .wall-detail-img-wrap,
+.vertical .wall-detail-text {
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
 }
 
-.horizontal .dummy-img,
-.horizontal .dummy-text {
+.horizontal .wall-detail-img-wrap,
+.horizontal .wall-detail-text {
   -webkit-transform: translateX(-100px);
   transform: translateX(-100px);
 }
 
-.content > div.show .dummy-img,
-.content > div.show .dummy-text {
+.content > div.show .wall-detail-img-wrap,
+.content > div.show .wall-detail-text {
   opacity: 1;
 }
 
-.vertical .content > div.show .dummy-img,
-.vertical .content > div.show .dummy-text {
+.vertical .content > div.show .wall-detail-img-wrap,
+.vertical .content > div.show .wall-detail-text {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-.horizontal .content > div.show .dummy-img,
-.horizontal .content > div.show .dummy-text {
+.horizontal .content > div.show .wall-detail-img-wrap,
+.horizontal .content > div.show .wall-detail-text {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
-p.dummy-text:nth-child(2) {
+p.wall-detail-text:nth-child(2) {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
-p.dummy-text:nth-child(3) {
+p.wall-detail-text:nth-child(3) {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
-.dummy-img {
-  height: 400px;
+.wall-detail-img-wrap {
+  //height: 400px;
   background-color: #ddd;
   margin: 30px auto;
+  img{
+    width:100%;
+  }
 }
 
-.dummy-text {
+.wall-detail-text {
   text-align: left;
   margin: 0 auto;
   padding: 10px 0;
-  color: #ddd;
-  font-size: 1em;
+  color: #777;
+  font-size: 14px;
   font-family: 'Blokk', Arial, serif;
 }
 
-.dummy-text:last-child {
+.wall-detail-text:last-child {
   padding-bottom: 100px;
 }
 
@@ -495,12 +498,12 @@ p.dummy-text:nth-child(3) {
 .no-pointerevents div.show,
 .no-csstransforms3d div.show,
 .no-csstransitions div.show,
-.no-csstransitions .dummy-img,
-.no-csstransitions .dummy-text,
-.no-csstransforms3d .dummy-img,
-.no-csstransforms3d .dummy-text,
-.no-pointerevents .dummy-img,
-.no-pointerevents .dummy-text {
+.no-csstransitions .wall-detail-img-wrap,
+.no-csstransitions .wall-detail-text,
+.no-csstransforms3d .wall-detail-img-wrap,
+.no-csstransforms3d .wall-detail-text,
+.no-pointerevents .wall-detail-img-wrap,
+.no-pointerevents .wall-detail-text {
   display: block !important;
   opacity: 1;
 }
