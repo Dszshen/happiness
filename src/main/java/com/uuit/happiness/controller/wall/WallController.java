@@ -28,7 +28,7 @@ public class WallController {
      */
     @RequestMapping("index")
     public String wall(@RequestParam(required = false,defaultValue ="1") Integer pageNo,
-                       @RequestParam(required = false,defaultValue = "10") Integer pageSize,
+                       @RequestParam(required = false,defaultValue = "16") Integer pageSize,
                        Model model){
         model.addAttribute("wallList",wallService.wall(pageNo,pageSize));
         return "front/wall/wall";
@@ -40,7 +40,7 @@ public class WallController {
      */
     @RequestMapping("more")
     public String more(@RequestParam(required = false,defaultValue ="1") Integer pageNo,
-                                 @RequestParam(required = false,defaultValue = "10") Integer pageSize,Model model){
+                                 @RequestParam(required = false,defaultValue = "16") Integer pageSize,Model model){
 
         model.addAttribute("moreList",wallService.wall(pageNo,pageSize));
 
@@ -60,9 +60,9 @@ public class WallController {
         return jsonArray;
     }
 
-    @RequestMapping("detail")
+    @RequestMapping("story")
     public String detail(){
-        return "front/wall/detail";
+        return "front/wall/story";
     }
 
     @RequestMapping("add")

@@ -19,10 +19,16 @@ html(lang='')
     .app-header
       include common/navigation
     .app-content
-      .app-index.app-container
+      .app-index
+        .app-index-banner
+          img(src="${request.contextPath}/assets/images/demos/1 (1).jpg")
     .app-footer
     // jQuery
     script(src='${request.contextPath}/assets/libs/jquery/dist/jquery.min.js')
     // Bootstrap JavaScript
     script(src='${request.contextPath}/assets/libs/bootstrap/dist/js/bootstrap.min.js')
     // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script.
+      //获取浏览器的高度
+      var bHeight = window.innerHeight;
+      $(".app-index-banner>img").css("height",bHeight-85);
