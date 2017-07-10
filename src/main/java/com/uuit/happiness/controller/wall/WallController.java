@@ -40,7 +40,7 @@ public class WallController {
      */
     @RequestMapping("more")
     public String more(@RequestParam(required = false,defaultValue ="1") Integer pageNo,
-                                 @RequestParam(required = false,defaultValue = "10") Integer pageSize,Model model){
+                                 @RequestParam(required = false,defaultValue = "20") Integer pageSize,Model model){
 
         model.addAttribute("moreList",wallService.wall(pageNo,pageSize));
 
