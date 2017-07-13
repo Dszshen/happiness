@@ -1,4 +1,4 @@
-package com.uuit.happiness.controller.blog;
+package com.uuit.happiness.controller.front;
 
 import com.alibaba.fastjson.JSONArray;
 import com.uuit.happiness.service.wall.WallService;

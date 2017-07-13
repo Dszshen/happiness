@@ -1,0 +1,30 @@
+doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title 首页
+        // Bootstrap CSS
+        link(rel='stylesheet', href='${request.contextPath}/assets/libs/bootstrap/dist/css/bootstrap.min.css')
+        //app.css
+        link(rel='stylesheet', href='${request.contextPath}/assets/css/app.css')
+        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        | <!--[if lte IE 9]> <script src="${request.contextPath}/assets/libs/html5shiv/dist/html5shiv.min.js"></script>
+        | <script src="${request.contextPath}/assets/libs/respond.js/dest/respond.min.js"></script><![endif]-->
+        | <!--[if lte IE 8]> <p class="text-center" style="display:block;background-color:#eaddac;padding:5px;color:#900;font-size:16px;">对不起，本网站不支持IE8以及IE8以下版本，为获得更好的体验，建议您更新为IE9及以上版本，本网站推荐使用谷歌浏览器，祝您生活愉快。</p> <![endif]-->
+    body
+        .app-login
+            .app-container
+                .login-wrap
+                    h3 登录1
+        // jQuery
+        script(src='${request.contextPath}/assets/libs/jquery/dist/jquery.min.js')
+        // Bootstrap JavaScript
+        //script(src='${request.contextPath}/assets/libs/bootstrap/dist/js/bootstrap.min.js')
+        // IE10 viewport hack for Surface/desktop Windows 8 bug
+        //script.
+          //获取浏览器的高度
+          var bHeight = window.innerHeight;
+          $(".app-index-banner>img").css("height",bHeight-85);

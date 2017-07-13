@@ -1,4 +1,4 @@
-package com.uuit.happiness.controller;
+package com.uuit.happiness.controller.front;
 
 import com.alibaba.fastjson.JSONObject;
 import com.uuit.happiness.common.util.JsonResult;
@@ -29,7 +29,7 @@ public class LoginController {
      */
     @RequestMapping("login.html")
     public String loginPage(){
-        return "login";
+        return "front/login";
     }
 
     /**

@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-hover-dropdown": "^2.2.1",
     "font-awesome": "^4.7.0",
     "html5shiv": "^3.7.3",
     "imagesloaded": "^4.1.3",

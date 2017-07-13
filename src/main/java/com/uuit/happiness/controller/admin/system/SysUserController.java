@@ -1,4 +1,4 @@
-package com.uuit.happiness.controller.system;
+package com.uuit.happiness.controller.admin.system;
 
 import com.uuit.happiness.bean.SysUser;
 import com.uuit.happiness.common.util.JsonResult;

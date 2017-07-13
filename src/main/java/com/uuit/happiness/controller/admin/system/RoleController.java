@@ -1,4 +1,4 @@
-package com.uuit.happiness.controller.system;
+package com.uuit.happiness.controller.admin.system;
 
 import com.alibaba.fastjson.JSONObject;
 import com.uuit.happiness.bean.Role;
