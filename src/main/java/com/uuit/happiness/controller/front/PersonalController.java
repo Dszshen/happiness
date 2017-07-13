@@ -18,4 +18,14 @@ public class PersonalController {
   public String profile(){
     return "front/personal/profile";
   }
+
+  @RequestMapping("word.html")
+  public String word(){
+    return "front/personal/sendWord";
+  }
+
+  @RequestMapping("picture.html")
+  public String picture(){
+    return "front/personal/sendPicture";
+  }
 }
