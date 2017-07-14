@@ -3,6 +3,7 @@ package com.uuit.happiness.controller.front;
 import com.alibaba.fastjson.JSONObject;
 import com.uuit.happiness.common.util.JsonResult;
 import com.uuit.happiness.service.user.UserService;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,15 +38,22 @@ public class LoginController {
         return "front/forgetPassword";
     }
 
-    @RequestMapping("pwdReset")
+    @RequestMapping(method=RequestMethod.POST,value = "pwdReset")
     @ResponseBody
-    public String pwdReset(){
+    public String pwdReset(@RequestBody JSONObject params){
+
+        if(StringUtils.isEmpty(params.getString("mobile"))){
+            return "对不起，请填写电话号码！";
+        }
+
+        if(StringUtils.isEmpty(params.getString("username"))){
+            return "对不起，请填写账号！";
+        }
+
+
 
         return "front/forgetPassword";
     }
-
-
-
 
 
     /**
