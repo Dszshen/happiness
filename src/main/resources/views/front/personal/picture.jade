@@ -16,7 +16,7 @@ html(lang='')
         | <script src="${request.contextPath}/assets/libs/respond.js/dest/respond.min.js"></script><![endif]-->
         | <!--[if lte IE 8]> <p class="text-center" style="display:block;background-color:#eaddac;padding:5px;color:#900;font-size:16px;">对不起，本网站不支持IE8以及IE8以下版本，为获得更好的体验，建议您更新为IE9及以上版本，本网站推荐使用谷歌浏览器，祝您生活愉快。</p> <![endif]-->
     body
-        .app-personal-word
+        .app-personal-picture
             .personal-header
                 nav.navbar.navbar-default
                     // Brand and toggle get grouped for better mobile display
@@ -30,15 +30,15 @@ html(lang='')
                     // Collect the nav links, forms, and other content for toggling
                     #bs-example-navbar-collapse-1.collapse.navbar-collapse
                         ul.nav.navbar-nav
-                            li
+                            li.active
                                 a(href='/personal/picture.html')
                                     | 发图
                                     span.sr-only
-                            li.active
+                            li
                                 a(href='/personal/word.html') 发文
                         ul.nav.navbar-nav.navbar-right
                             li
-                                a(href='#') Link
+                                a(href='/login.html') 登录
                             li.dropdown
                                 a.dropdown-toggle(href='#', data-hover="dropdown" data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                                     | 我的
@@ -47,7 +47,7 @@ html(lang='')
                                     li
                                         a(href='/personal/profile.html') 个人中心
                                     li
-                                        a(href='#') 设置
+                                        a(href='/personal/edit.html') 设置
                                     li.divider(role='separator')
                                     li
                                         a(href='#') 退出登录

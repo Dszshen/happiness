@@ -16,26 +16,29 @@ html(lang='')
         | <script src="${request.contextPath}/assets/libs/respond.js/dest/respond.min.js"></script><![endif]-->
         | <!--[if lte IE 8]> <p class="text-center" style="display:block;background-color:#eaddac;padding:5px;color:#900;font-size:16px;">对不起，本网站不支持IE8以及IE8以下版本，为获得更好的体验，建议您更新为IE9及以上版本，本网站推荐使用谷歌浏览器，祝您生活愉快。</p> <![endif]-->
     body
-        .app-login
-            .login-bg
-            .login-wrap
-                .login-logo
+        .app-register
+            .register-bg
+            .register-wrap
+                .register-logo
                     h1
                         a(href="/personal/profile.html") logo
-                .login-form
-                    .login-desc
-                        h3 登录
+                .register-form
+                    .register-desc
+                        h3 注册
                     .username-wrap
+                        span.reg-label 用户名:
                         input(type="text")
                     .password-wrap
+                        span.reg-label 密码:
                         input(type="text")
-                    .forget-pwd-wrap
-                        a(href="/forgetPassword.html") 忘记密码?
-                    .login-btn-wrap
-                        button(type="button") 登录
-                    .go-register
+                    .password-wrap
+                        span.reg-label 重复密码:
+                        input(type="text")
+                    .reg-btn-wrap
+                        button(type="button") 注册
+                    .go-login
                         i.fa.fa-arrow-right
-                        a(href="/register.html") 还没有账号?去注册一个
+                        a(href="/login.html") 已有账号?去登录!
                     //.v-code-wrap
                         input(type="text")
                         img(src="")

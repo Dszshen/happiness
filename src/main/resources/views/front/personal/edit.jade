@@ -4,7 +4,7 @@ html(lang='')
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
-        title 个人中心
+        title 个人信息设置
         // Bootstrap CSS
         link(rel='stylesheet', href='${request.contextPath}/assets/libs/bootstrap/dist/css/bootstrap.min.css')
         link(rel='stylesheet', href='${request.contextPath}/assets/libs/font-awesome/css/font-awesome.min.css')
@@ -51,15 +51,9 @@ html(lang='')
                                     li.divider(role='separator')
                                     li
                                         a(href='#') 退出登录
-                        // /.navbar-collapse
-                    // /.container-fluid
-            //.profile-header
-                .profile-logo
-                .profile-nav
-                .profile-info
             .profile-container
                 .profile-info-wrap
-                    .profile-head-box
+                    //.profile-head-box
                         .headimg-wrap
                             .img-circle-wrap
                                 img.img-circle(src="/assets/images/demos/1 (3).jpg")
@@ -72,100 +66,106 @@ html(lang='')
                                     span 那些吹过的牛逼都实现了吗？
                             .info-tags
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 计算机专业计算机专业计算机
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 音乐小天才机专业计算机专业
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 代码高手机专业计算机专业
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 老司机机专业计算机专业
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 老司机
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 老司机
                                 .tag-item
-                                    i.fa.fa-tag
+                                    i.fa.fa-leaf
                                     span 老司机
                     .profile-info-box
                         //左侧导航
-                        .info-nav
+                        //.info-nav
                             .list-group
                                 .list-item-title
-                                    | 个人资料
+                                    | 设置
                                 a.list-group-item(href='#') 基本信息
                                 a.list-group-item(href='#') 其他
                         //右侧内容
-                        .info-content
+                        .info-content.edit-info-content
                             .info-box
                                 .info-box-headding
                                     h3 个人资料
                                 .info-box-body
-                                    .info-list-item
-                                        span.title 姓名：
-                                        span.detail 王大锤
-                                    .info-list-item
-                                        span.title Email：
-                                        span.detail email@email.com
-                                    .info-list-item
-                                        span.title 电话：
-                                        span.detail 18800000000
-                            .info-box
-                                .info-box-headding.clearfix
-                                    h3.pull-left 我的地盘
-                                    ul.nav.nav-tabs.pull-right(role='tablist')
-                                        li.active(role='presentation')
-                                            a(href='#font', aria-controls='home', role='tab', data-toggle='tab') 文字
-                                        li(role='presentation')
-                                            a(href='#picture', aria-controls='picture', role='tab', data-toggle='tab') 图片
-                                        li(role='presentation')
-                                            a(href='#article', aria-controls='article', role='tab', data-toggle='tab') 文章
-                                .info-box-body
-                                    //div(role='tabpanel')
-                                    // Nav tabs
-                                    //ul.nav.nav-tabs(role='tablist')
-                                        li.active(role='presentation')
-                                            a(href='#font', aria-controls='home', role='tab', data-toggle='tab') 文字
-                                        li(role='presentation')
-                                            a(href='#picture', aria-controls='picture', role='tab', data-toggle='tab') 图片
-                                        li(role='presentation')
-                                            a(href='#article', aria-controls='article', role='tab', data-toggle='tab') 文章
-                                    // Tab panes
-                                    .tab-content
-                                        #font.tab-pane.active(role='tabpanel')
-                                            table.table.table-hover
-                                                thead
-                                                    tr
-                                                        th 文字
-                                                tbody
-                                                    tr
-                                                        td 文字
-                                        #picture.tab-pane(role='tabpanel')
-                                            table.table.table-hover.table-striped
-                                                thead
-                                                    tr
-                                                        th 文字
-                                                tbody
-                                                    tr
-                                                        td 文字
-                                        #article.tab-pane(role='tabpanel')
-                                            table.table.table-hover.table-condensed
-                                                thead
-                                                    tr
-                                                        th 文字
-                                                tbody
-                                                    tr
-                                                        td 文字
-
-                            .info-box
-                                .info-box-headding
-                                    h3 个人资料
-                                .info-box-body
+                                    form.edit-info-form
+                                        .edit-info-item
+                                            span.edit-label 用户名：
+                                            .form-ctrl-wrap
+                                                span.edit-text 王大锤
+                                                //span.text-required *
+                                                //input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label 昵称：
+                                            .form-ctrl-wrap
+                                                em.text-required *
+                                                input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label 真实姓名：
+                                            .form-ctrl-wrap
+                                                em.text-required *
+                                                input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label 电话：
+                                            .form-ctrl-wrap
+                                                em.text-required *
+                                                input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label 邮箱：
+                                            .form-ctrl-wrap
+                                                em.text-required *
+                                                input.form-ctrl(type="email")
+                                        .edit-info-item
+                                            span.edit-label QQ：
+                                            .form-ctrl-wrap
+                                                em.text-required &nbsp;
+                                                input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label 微信：
+                                            .form-ctrl-wrap
+                                                em.text-required &nbsp;
+                                                input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label 性别：
+                                            .form-ctrl-wrap
+                                                em.text-required &nbsp;
+                                                //select.form-ctrl.form-ctrl-select
+                                                select.form-ctrl.form-ctrl-select
+                                                    option(value="0") 保密
+                                                    option(value="1") 男
+                                                    option(value="2") 女
+                                        .edit-info-item
+                                            span.edit-label 地址：
+                                            .form-ctrl-wrap
+                                                em.text-required &nbsp;
+                                                input.form-ctrl.form-ctrl-address(type="text")
+                                        .edit-info-item
+                                            span.edit-label 个人主页：
+                                            .form-ctrl-wrap
+                                                em.text-required &nbsp;
+                                                input.form-ctrl(type="text")
+                                        .edit-info-item
+                                            span.edit-label.edit-signature-label 个性签名：
+                                            .form-ctrl-wrap
+                                                em.text-required &nbsp;
+                                                textarea.form-ctrl.form-ctrl-signature(rows=3)
+                                        .edit-info-item
+                                            //.form-action
+                                            span.edit-label.edit-signature-label
+                                            .form-ctrl-wrap
+                                                button.form-submit-btn 保存
         script(src='${request.contextPath}/assets/libs/jquery/dist/jquery.min.js')
         script(src='${request.contextPath}/assets/libs/bootstrap/dist/js/bootstrap.min.js')
         script(src='${request.contextPath}/assets/libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js')

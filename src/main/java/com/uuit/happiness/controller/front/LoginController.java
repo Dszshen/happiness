@@ -32,6 +32,22 @@ public class LoginController {
         return "front/login";
     }
 
+    @RequestMapping("forgetPassword.html")
+    public String forgetPassword(){
+        return "front/forgetPassword";
+    }
+
+    @RequestMapping("pwdReset")
+    @ResponseBody
+    public String pwdReset(){
+
+        return "front/forgetPassword";
+    }
+
+
+
+
+
     /**
      * 登陆系统
      * @param loginInfo
