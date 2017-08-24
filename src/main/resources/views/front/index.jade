@@ -16,13 +16,15 @@ html(lang='')
     | <script src="${request.contextPath}/assets/libs/respond.js/dest/respond.min.js"></script><![endif]-->
     | <!--[if lte IE 8]> <p class="text-center" style="display:block;background-color:#eaddac;padding:5px;color:#900;font-size:16px;">对不起，本网站不支持IE8以及IE8以下版本，为获得更好的体验，建议您更新为IE9及以上版本，本网站推荐使用谷歌浏览器，祝您生活愉快。</p> <![endif]-->
   body
-    .app-header
-      include common/navigation
-    .app-content
-      .app-index
-        .app-index-banner
-          //img(src="${request.contextPath}/assets/images/demos/1 (1).jpg")
-    .app-footer
+    .app
+      .app-header
+        include common/navigation
+      .app-content
+        .app-index
+          .app-index-banner
+            //img(src="${request.contextPath}/assets/images/demos/1 (1).jpg")
+      .app-footer
+        p.bottom-line —————— 到底了 ——————
     // jQuery
     script(src='${request.contextPath}/assets/libs/jquery/dist/jquery.min.js')
     // Bootstrap JavaScript

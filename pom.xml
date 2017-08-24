@@ -35,7 +35,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.3.6.RELEASE</spring.version>
-        <spring-data.version>1.10.6.RELEASE</spring-data.version>
+        <spring-data.version>1.10.1.RELEASE</spring-data.version>
         <hibernate.version>5.2.7.Final</hibernate.version>
         <jackson.version>2.5.0</jackson.version>
         <druid.version>1.0.11</druid.version>
@@ -241,7 +241,8 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
-            <version>${spring-data.version}</version>
+            <!--<version>${spring-data.version}</version>-->
+            <version>1.9.1.RELEASE</version>
         </dependency>
 
         <!-- c3p0数据源 -->
